@@ -1,0 +1,106 @@
+ *, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+
+ html {
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+ }
+
+  
+ .header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-block: 2rem;
+ }
+
+
+ .header__applicant-info {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+ }
+
+
+ .main {
+  width: 40%;
+  margin-inline: auto;
+ }
+
+ #education {
+  margin-block-end: 2rem;
+ }
+
+
+ #education h2 {
+  text-align: center;
+  margin-block-end: .85rem;
+ }
+
+ .education__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: .5rem;
+ }
+
+ .education__info div:nth-child(2) {
+  align-self: flex-end;
+ }
+
+ .education__info div:nth-child(2) p {
+  font-weight: 500;
+ }
+
+ #technical-skills h2 {
+  text-align: center;
+  margin-block-end: .85rem;
+ }
+
+ .technical-skills__list {
+  display: grid;
+  grid-template-columns: fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%) fit-content(100%);
+  padding-block: 1rem;
+  column-gap: 2rem;
+  row-gap: .5rem;
+  list-style-type: disc;
+  margin-inline-start: 1rem;
+
+ }
+
+
+
+ .professional-experiences {
+  padding-block-start: .5rem;
+ }
+
+ .professional-experience:not(:last-child) {
+  margin-block-end: 1rem;
+ }
+
+ .professional-experience__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: .35rem;
+ }
+
+ .professional-experience__task {
+  list-style-type: disc;
+  margin-inline-start: 2rem;
+ }
+
+ @media print {
+  .main {
+    width: 100%;
+  }
+ }
