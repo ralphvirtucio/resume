@@ -52,6 +52,7 @@
  .main {
   max-width: 40%;
   margin-inline: auto;
+  margin-block: 3rem;
  }
 
  #education {
